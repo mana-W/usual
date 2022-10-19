@@ -14,7 +14,7 @@ find_ctrl <- function(x){
   return(c(ctrlset))
 }
 
-cellscore_fun <- function(testmoud,ctrlmoudcells){
+cellscore_fun <- function(testmoud,ctrlmoud,cells){
    mean_Gt <- mean(Erexp[testmoud,cells])
    mean_Gc <- mean(Erexp[ctrlmoud,cells])
    SC <- mean_Gt - mean_Gc
